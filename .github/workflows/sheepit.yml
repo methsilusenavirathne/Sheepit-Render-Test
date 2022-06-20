@@ -24,16 +24,16 @@ jobs:
     steps:
     
     - name: Folder Check
-      run: apt-get install java-common default-jre-headless ffmpeg
+      run: sudo apt-get install java-common default-jre-headless ffmpeg
       
     - name: Install Blender
-      run: apt update
+      run: sudo apt update
       
     - name: Folder Check
-      run: apt remove libtcmalloc-minimal4
+      run: sudo apt remove libtcmalloc-minimal4
       
     - name: Install Blender
-      run: apt install libtcmalloc-minimal4
+      run: sudo apt install libtcmalloc-minimal4
       
     - name: Folder Check
       run: apt install libboost-all-dev
