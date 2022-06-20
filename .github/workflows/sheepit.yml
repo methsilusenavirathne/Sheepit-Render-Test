@@ -51,4 +51,4 @@ jobs:
       run: mkdir ./content
       
     - name: Render
-      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -cache-dir /content/cache -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -cache-dir /content -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
