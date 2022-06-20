@@ -24,7 +24,7 @@ jobs:
         version: [10, 12, 14]
     runs-on: ${{ matrix.os }}
     steps:
-      - name: Folder Check
+    - name: Folder Check
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
     - name: Install Blender
