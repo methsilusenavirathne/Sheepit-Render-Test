@@ -1,0 +1,300 @@
+name: Sheepit Render
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      username:
+        description: 'Username'
+        required: true
+      password:
+        description: 'Password'
+        default: 1
+        required: false
+      end_frame:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "greet"
+  render:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Folder Check
+      run: sudo apt-get install java-common default-jre-headless ffmpeg
+      
+    - name: Install Blender
+      run: sudo apt update
+      
+    - name: Folder Check
+      run: sudo apt remove libtcmalloc-minimal4
+      
+    - name: Install Blender
+      run: sudo apt install libtcmalloc-minimal4
+      
+    - name: Folder Check
+      run: sudo apt install libboost-all-dev
+        
+    - name: Folder Check
+      run: sudo apt install libgl1-mesa-dev
+        
+    - name: Create render directory
+      run: sudo apt install libglu1-mesa libsm-dev
+      
+    - name: Folder Check
+      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
+    
+    - name: Create render directory
+      run: mkdir ./content
+      
+    - name: Render
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+
+  mp1:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Folder Check
+      run: sudo apt-get install java-common default-jre-headless ffmpeg
+      
+    - name: Install Blender
+      run: sudo apt update
+      
+    - name: Folder Check
+      run: sudo apt remove libtcmalloc-minimal4
+      
+    - name: Install Blender
+      run: sudo apt install libtcmalloc-minimal4
+      
+    - name: Folder Check
+      run: sudo apt install libboost-all-dev
+        
+    - name: Folder Check
+      run: sudo apt install libgl1-mesa-dev
+        
+    - name: Create render directory
+      run: sudo apt install libglu1-mesa libsm-dev
+      
+    - name: Folder Check
+      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
+    
+    - name: Create render directory
+      run: mkdir ./content
+      
+    - name: Render
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      
+  mp2:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Folder Check
+      run: sudo apt-get install java-common default-jre-headless ffmpeg
+      
+    - name: Install Blender
+      run: sudo apt update
+      
+    - name: Folder Check
+      run: sudo apt remove libtcmalloc-minimal4
+      
+    - name: Install Blender
+      run: sudo apt install libtcmalloc-minimal4
+      
+    - name: Folder Check
+      run: sudo apt install libboost-all-dev
+        
+    - name: Folder Check
+      run: sudo apt install libgl1-mesa-dev
+        
+    - name: Create render directory
+      run: sudo apt install libglu1-mesa libsm-dev
+      
+    - name: Folder Check
+      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
+    
+    - name: Create render directory
+      run: mkdir ./content
+      
+    - name: Render
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+    
+  mp3:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Folder Check
+      run: sudo apt-get install java-common default-jre-headless ffmpeg
+      
+    - name: Install Blender
+      run: sudo apt update
+      
+    - name: Folder Check
+      run: sudo apt remove libtcmalloc-minimal4
+      
+    - name: Install Blender
+      run: sudo apt install libtcmalloc-minimal4
+      
+    - name: Folder Check
+      run: sudo apt install libboost-all-dev
+        
+    - name: Folder Check
+      run: sudo apt install libgl1-mesa-dev
+        
+    - name: Create render directory
+      run: sudo apt install libglu1-mesa libsm-dev
+      
+    - name: Folder Check
+      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
+    
+    - name: Create render directory
+      run: mkdir ./content
+      
+    - name: Render
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+
+  mp4:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Folder Check
+      run: sudo apt-get install java-common default-jre-headless ffmpeg
+      
+    - name: Install Blender
+      run: sudo apt update
+      
+    - name: Folder Check
+      run: sudo apt remove libtcmalloc-minimal4
+      
+    - name: Install Blender
+      run: sudo apt install libtcmalloc-minimal4
+      
+    - name: Folder Check
+      run: sudo apt install libboost-all-dev
+        
+    - name: Folder Check
+      run: sudo apt install libgl1-mesa-dev
+        
+    - name: Create render directory
+      run: sudo apt install libglu1-mesa libsm-dev
+      
+    - name: Folder Check
+      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
+    
+    - name: Create render directory
+      run: mkdir ./content
+      
+    - name: Render
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      
+  mp5:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Folder Check
+      run: sudo apt-get install java-common default-jre-headless ffmpeg
+      
+    - name: Install Blender
+      run: sudo apt update
+      
+    - name: Folder Check
+      run: sudo apt remove libtcmalloc-minimal4
+      
+    - name: Install Blender
+      run: sudo apt install libtcmalloc-minimal4
+      
+    - name: Folder Check
+      run: sudo apt install libboost-all-dev
+        
+    - name: Folder Check
+      run: sudo apt install libgl1-mesa-dev
+        
+    - name: Create render directory
+      run: sudo apt install libglu1-mesa libsm-dev
+      
+    - name: Folder Check
+      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
+    
+    - name: Create render directory
+      run: mkdir ./content
+      
+    - name: Render
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text    
+    
+  mp6:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Folder Check
+      run: sudo apt-get install java-common default-jre-headless ffmpeg
+      
+    - name: Install Blender
+      run: sudo apt update
+      
+    - name: Folder Check
+      run: sudo apt remove libtcmalloc-minimal4
+      
+    - name: Install Blender
+      run: sudo apt install libtcmalloc-minimal4
+      
+    - name: Folder Check
+      run: sudo apt install libboost-all-dev
+        
+    - name: Folder Check
+      run: sudo apt install libgl1-mesa-dev
+        
+    - name: Create render directory
+      run: sudo apt install libglu1-mesa libsm-dev
+      
+    - name: Folder Check
+      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
+    
+    - name: Create render directory
+      run: mkdir ./content
+      
+    - name: Render
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      
+  mp7:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Folder Check
+      run: sudo apt-get install java-common default-jre-headless ffmpeg
+      
+    - name: Install Blender
+      run: sudo apt update
+      
+    - name: Folder Check
+      run: sudo apt remove libtcmalloc-minimal4
+      
+    - name: Install Blender
+      run: sudo apt install libtcmalloc-minimal4
+      
+    - name: Folder Check
+      run: sudo apt install libboost-all-dev
+        
+    - name: Folder Check
+      run: sudo apt install libgl1-mesa-dev
+        
+    - name: Create render directory
+      run: sudo apt install libglu1-mesa libsm-dev
+      
+    - name: Folder Check
+      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
+    
+    - name: Create render directory
+      run: mkdir ./content
+      
+    - name: Render
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text    
+    
