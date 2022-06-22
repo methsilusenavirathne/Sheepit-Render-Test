@@ -1,4 +1,4 @@
-name: Sheepit Render
+name: Sheepit Blender Render
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -11,9 +11,7 @@ on:
         required: true
       password:
         description: 'Password'
-        default: 1
         required: false
-      end_frame:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
