@@ -21,31 +21,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: Folder Check
+    - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
-    - name: Install Blender
+    - name: Shell Update
       run: sudo apt update
       
-    - name: Folder Check
+    - name: Library remove
       run: sudo apt remove libtcmalloc-minimal4
       
-    - name: Install Blender
+    - name: Library install
       run: sudo apt install libtcmalloc-minimal4
       
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libboost-all-dev
         
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libgl1-mesa-dev
         
-    - name: Create render directory
+    - name: Blender Libarary
       run: sudo apt install libglu1-mesa libsm-dev
       
-    - name: Folder Check
+    - name: Download Client
       run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
     
-    - name: Create render directory
+    - name: Create cache directory
       run: mkdir ./content
       
     - name: Render
@@ -56,31 +56,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: Folder Check
+    - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
-    - name: Install Blender
+    - name: Shell Update
       run: sudo apt update
       
-    - name: Folder Check
+    - name: Library remove
       run: sudo apt remove libtcmalloc-minimal4
       
-    - name: Install Blender
+    - name: Library install
       run: sudo apt install libtcmalloc-minimal4
       
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libboost-all-dev
         
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libgl1-mesa-dev
         
-    - name: Create render directory
+    - name: Blender Libarary
       run: sudo apt install libglu1-mesa libsm-dev
       
-    - name: Folder Check
+    - name: Download Client
       run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
     
-    - name: Create render directory
+    - name: Create cache directory
       run: mkdir ./content
       
     - name: Render
@@ -91,31 +91,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: Folder Check
+    - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
-    - name: Install Blender
+    - name: Shell Update
       run: sudo apt update
       
-    - name: Folder Check
+    - name: Library remove
       run: sudo apt remove libtcmalloc-minimal4
       
-    - name: Install Blender
+    - name: Library install
       run: sudo apt install libtcmalloc-minimal4
       
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libboost-all-dev
         
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libgl1-mesa-dev
         
-    - name: Create render directory
+    - name: Blender Libarary
       run: sudo apt install libglu1-mesa libsm-dev
       
-    - name: Folder Check
+    - name: Download Client
       run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
     
-    - name: Create render directory
+    - name: Create cache directory
       run: mkdir ./content
       
     - name: Render
@@ -126,31 +126,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: Folder Check
+    - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
-    - name: Install Blender
+    - name: Shell Update
       run: sudo apt update
       
-    - name: Folder Check
+    - name: Library remove
       run: sudo apt remove libtcmalloc-minimal4
       
-    - name: Install Blender
+    - name: Library install
       run: sudo apt install libtcmalloc-minimal4
       
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libboost-all-dev
         
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libgl1-mesa-dev
         
-    - name: Create render directory
+    - name: Blender Libarary
       run: sudo apt install libglu1-mesa libsm-dev
       
-    - name: Folder Check
+    - name: Download Client
       run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
     
-    - name: Create render directory
+    - name: Create cache directory
       run: mkdir ./content
       
     - name: Render
@@ -161,31 +161,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: Folder Check
+    - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
-    - name: Install Blender
+    - name: Shell Update
       run: sudo apt update
       
-    - name: Folder Check
+    - name: Library remove
       run: sudo apt remove libtcmalloc-minimal4
       
-    - name: Install Blender
+    - name: Library install
       run: sudo apt install libtcmalloc-minimal4
       
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libboost-all-dev
         
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libgl1-mesa-dev
         
-    - name: Create render directory
+    - name: Blender Libarary
       run: sudo apt install libglu1-mesa libsm-dev
       
-    - name: Folder Check
+    - name: Download Client
       run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
     
-    - name: Create render directory
+    - name: Create cache directory
       run: mkdir ./content
       
     - name: Render
@@ -196,33 +196,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: Folder Check
+    - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
-    - name: Install Blender
+    - name: Shell Update
       run: sudo apt update
       
-    - name: Folder Check
+    - name: Library remove
       run: sudo apt remove libtcmalloc-minimal4
       
-    - name: Install Blender
+    - name: Library install
       run: sudo apt install libtcmalloc-minimal4
       
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libboost-all-dev
         
-    - name: Folder Check
+    - name: Blender Libarary
       run: sudo apt install libgl1-mesa-dev
         
-    - name: Create render directory
+    - name: Blender Libarary
       run: sudo apt install libglu1-mesa libsm-dev
       
-    - name: Folder Check
+    - name: Download Client
       run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
     
-    - name: Create render directory
+    - name: Create cache directory
       run: mkdir ./content
       
     - name: Render
-      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text    
+      run: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
     
