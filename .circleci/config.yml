@@ -40,7 +40,7 @@ jobs:
           command: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.21338.0.jar
       - run:
           name: Render
-          command: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -cache-dir /content/cache -compute-method CPU -login lmsenavirathne -password 4Bxka7ytkU0qqunxhCMGUgtb1JU5phIgcrd0bC28 -ui text
+          command: java -jar sheepit-client-6.21338.0.jar -ui oneLine/text -compute-method CPU -login lmsenavirathne -password 4Bxka7ytkU0qqunxhCMGUgtb1JU5phIgcrd0bC28 -ui text
 
         
       
