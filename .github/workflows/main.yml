@@ -78,13 +78,13 @@ jobs:
       run: sudo apt install libglu1-mesa libsm-dev
       
     - name: Download Client
-      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.22092.0.jar
+      run: wget https://www.sheepit-renderfarm.com/media/applet/sheepit-client-6.22198.0.jar
     
     - name: Create cache directory
       run: mkdir ./content
       
     - name: Render
-      run: java -jar sheepit-client-6.22092.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      run: java -jar sheepit-client-6.22198.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
       
   mp2:
     # The type of runner that the job will run on
