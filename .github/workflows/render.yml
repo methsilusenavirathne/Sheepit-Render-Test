@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "greet"
   render:
     # The type of runner that the job will run on
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
     
     - name: Java Installation
