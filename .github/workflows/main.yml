@@ -49,7 +49,7 @@ jobs:
       run: mkdir ./content
       
     - name: Render
-      run: java -jar sheepit-client-6.22198.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      run: java -jar sheepit-client-7.23099.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
 
   mp1:
     # The type of runner that the job will run on
@@ -84,7 +84,7 @@ jobs:
       run: mkdir ./content
       
     - name: Render
-      run: java -jar sheepit-client-6.22198.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      run: java -jar sheepit-client-7.23099.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
       
   mp2:
     # The type of runner that the job will run on
@@ -119,7 +119,7 @@ jobs:
       run: mkdir ./content
       
     - name: Render
-      run: java -jar sheepit-client-6.22198.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      run: java -jar sheepit-client-7.23099.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
     
   mp3:
     # The type of runner that the job will run on
@@ -154,7 +154,7 @@ jobs:
       run: mkdir ./content
       
     - name: Render
-      run: java -jar sheepit-client-6.22198.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      run: java -jar sheepit-client-7.23099.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
 
   mp4:
     # The type of runner that the job will run on
@@ -189,7 +189,7 @@ jobs:
       run: mkdir ./content
       
     - name: Render
-      run: java -jar sheepit-client-6.22198.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      run: java -jar sheepit-client-7.23099.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
       
   mp5:
     # The type of runner that the job will run on
@@ -224,5 +224,5 @@ jobs:
       run: mkdir ./content
       
     - name: Render
-      run: java -jar sheepit-client-6.22198.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
+      run: java -jar sheepit-client-7.23099.0.jar -ui oneLine/text -compute-method CPU -login ${{ github.event.inputs.username }} -password ${{ github.event.inputs.password }} -ui text
     
