@@ -59,6 +59,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
+    - name: Shell Update
+      run: sudo apt-get update
+      
     - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
@@ -94,6 +97,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
+   - name: Shell Update
+      run: sudo apt-get update
+      
     - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
@@ -129,6 +135,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
+    - name: Shell Update
+      run: sudo apt-get update
+      
     - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
@@ -164,6 +173,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
+    - name: Shell Update
+      run: sudo apt-get update
+      
     - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
@@ -199,6 +211,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
+    - name: Shell Update
+      run: sudo apt-get update
+      
     - name: Java Installation
       run: sudo apt-get install java-common default-jre-headless ffmpeg
       
