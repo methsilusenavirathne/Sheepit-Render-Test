@@ -1,4 +1,4 @@
-name: Sheepit Blender Render 2
+name: Sheepit web_test
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -96,7 +96,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-   - name: Shell Update
+    - name: Shell Update
       run: sudo apt-get update
       
     - name: Java Installation
